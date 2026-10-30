@@ -6,13 +6,16 @@
     <title>Landing Page - Pemilik & Tamu</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts Inter -->
+    <!-- Google Fonts: Inter (Modern) & Playfair Display (Classic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+        }
+        .font-classic {
+            font-family: 'Playfair Display', serif;
         }
     </style>
 </head>
@@ -50,7 +53,7 @@
             <!-- Grid 2 Card (Kiri dan Kanan) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 
-                <!-- Card Kiri: Kotak Pemilik -->
+                <!-- Card Kiri: Kotak Pemilik (Tetap Modern) -->
                 <div class="group relative bg-white border border-slate-200/90 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden">
                     <!-- Header Card -->
                     <div class="px-6 py-5 border-b border-slate-100 bg-slate-50/50 flex items-center justify-between">
@@ -70,19 +73,19 @@
                         </span>
                     </div>
 
-                    <!-- Isi Card (Kosong dengan visual placeholder) -->
+                    <!-- Isi Card -->
                     <div class="p-6 flex-grow flex flex-col items-center justify-center min-h-[260px] sm:min-h-[320px] border-2 border-dashed border-slate-200 m-4 rounded-xl bg-slate-50/30 text-slate-400">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-slate-300 mb-2 stroke-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                         </svg>
                         <p class="text-sm font-medium text-slate-500">Konten Masih Kosong</p>
-                        <p class="text-xs text-slate-400 mt-1">Siap untuk ditambahkan elemen formulir atau data pemilik.</p>
+                        <p class="text-xs text-slate-400 mt-1 text-center">Siap untuk ditambahkan elemen formulir<br>atau data pemilik.</p>
                     </div>
                 </div>
 
-                <!-- Card Kanan: Kotak Tamu -->
+                <!-- Card Kanan: Kotak Tamu (Dengan Isi Bergaya Classic) -->
                 <div class="group relative bg-white border border-slate-200/90 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden">
-                    <!-- Header Card -->
+                    <!-- Header Card (Tetap senada dengan layout luar) -->
                     <div class="px-6 py-5 border-b border-slate-100 bg-slate-50/50 flex items-center justify-between">
                         <div class="flex items-center gap-3">
                             <span class="p-2 rounded-lg bg-emerald-50 text-emerald-600">
@@ -100,13 +103,34 @@
                         </span>
                     </div>
 
-                    <!-- Isi Card (Kosong dengan visual placeholder) -->
-                    <div class="p-6 flex-grow flex flex-col items-center justify-center min-h-[260px] sm:min-h-[320px] border-2 border-dashed border-slate-200 m-4 rounded-xl bg-slate-50/30 text-slate-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-slate-300 mb-2 stroke-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                        </svg>
-                        <p class="text-sm font-medium text-slate-500">Konten Masih Kosong</p>
-                        <p class="text-xs text-slate-400 mt-1">Siap untuk ditambahkan formulir tamu, tiket, atau info lainnya.</p>
+                    <!-- Isi Card Bergaya Modern / Simple -->
+                    <div class="p-6 flex-grow flex flex-col justify-center m-4 bg-white border border-slate-100 shadow-sm rounded-xl">
+                        
+                        <div class="text-center text-slate-800">
+                            <!-- Judul Modern -->
+                            <h3 class="text-xl font-semibold mb-1.5 tracking-tight">Formulir Kehadiran</h3>
+                            <p class="text-xs text-slate-500 mb-6">Silakan isi data diri Anda sebagai tamu.</p>
+                            
+                            <!-- Form Bergaya Modern -->
+                            <div class="space-y-4 text-left">
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-700 mb-1.5">Nama Lengkap</label>
+                                    <input type="text" class="w-full bg-slate-50 border border-slate-200 focus:bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 focus:outline-none rounded-lg px-3 py-2 text-sm transition-all text-slate-800 placeholder:text-slate-400" placeholder="Masukkan nama Anda">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-700 mb-1.5">Tujuan Kunjungan</label>
+                                    <textarea rows="2" class="w-full bg-slate-50 border border-slate-200 focus:bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 focus:outline-none rounded-lg px-3 py-2 text-sm transition-all resize-none text-slate-800 placeholder:text-slate-400" placeholder="Tuliskan tujuan Anda..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Tombol Bergaya Modern -->
+                            <button class="mt-6 w-full bg-emerald-600 text-white hover:bg-emerald-700 active:bg-emerald-800 transition-colors rounded-lg px-4 py-2.5 text-sm font-semibold shadow-sm flex justify-center items-center gap-2">
+                                <span>Kirim Data</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
 

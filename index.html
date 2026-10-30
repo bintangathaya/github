@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kala Kopi - Artisan Roastery & Coffee Bar</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -49,27 +52,33 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
+
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
     </style>
 </head>
+
 <body class="bg-coffee-50 text-coffee-900 font-sans selection:bg-coffee-500 selection:text-white">
 
     <!-- Navbar Sticky -->
     <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-4 px-6 md:px-12">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <a href="#" class="flex items-center gap-2.5 group">
-                <div class="w-10 h-10 rounded-full bg-coffee-800 text-amberGold flex items-center justify-center shadow-md group-hover:scale-105 transition">
+                <div
+                    class="w-10 h-10 rounded-full bg-coffee-800 text-amberGold flex items-center justify-center shadow-md group-hover:scale-105 transition">
                     <i data-lucide="coffee" class="w-5 h-5"></i>
                 </div>
                 <div>
-                    <span class="font-serif text-2xl font-bold tracking-tight text-white block leading-none">KALA KOPI</span>
-                    <span class="text-[10px] uppercase tracking-widest text-coffee-300 font-medium">Roastery & Eatery</span>
+                    <span class="font-serif text-2xl font-bold tracking-tight text-white block leading-none">KALA
+                        KOPI</span>
+                    <span class="text-[10px] uppercase tracking-widest text-coffee-300 font-medium">Roastery &
+                        Eatery</span>
                 </div>
             </a>
 
@@ -84,11 +93,14 @@
 
             <!-- Actions -->
             <div class="flex items-center gap-3">
-                <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-full bg-coffee-800/80 hover:bg-coffee-700 text-coffee-100 transition border border-coffee-700">
+                <button onclick="toggleCartDrawer()"
+                    class="relative p-2.5 rounded-full bg-coffee-800/80 hover:bg-coffee-700 text-coffee-100 transition border border-coffee-700">
                     <i data-lucide="shopping-bag" class="w-5 h-5"></i>
-                    <span id="cartCountBadge" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-amberGold text-coffee-950 font-bold text-xs flex items-center justify-center hidden">0</span>
+                    <span id="cartCountBadge"
+                        class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-amberGold text-coffee-950 font-bold text-xs flex items-center justify-center hidden">0</span>
                 </button>
-                <a href="#reservasi" class="hidden sm:inline-flex items-center gap-2 bg-amberGold hover:bg-amber-500 text-coffee-950 font-semibold px-5 py-2.5 rounded-full transition shadow-lg text-sm">
+                <a href="#reservasi"
+                    class="hidden sm:inline-flex items-center gap-2 bg-amberGold hover:bg-amber-500 text-coffee-950 font-semibold px-5 py-2.5 rounded-full transition shadow-lg text-sm">
                     <i data-lucide="calendar" class="w-4 h-4"></i>
                     <span>Reservasi</span>
                 </a>
@@ -99,30 +111,39 @@
         </div>
 
         <!-- Mobile Nav Menu dropdown -->
-        <div id="mobileNavMenu" class="hidden md:hidden mt-3 p-4 rounded-2xl glassmorphism border border-coffee-800 text-coffee-100 flex flex-col gap-3">
-            <a href="#tentang" onclick="toggleMobileNav()" class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Tentang Kami</a>
-            <a href="#menu" onclick="toggleMobileNav()" class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Menu Pilihan</a>
-            <a href="#brew-guide" onclick="toggleMobileNav()" class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Brew Guide</a>
-            <a href="#ulasan" onclick="toggleMobileNav()" class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Cerita Rasa</a>
-            <a href="#lokasi" onclick="toggleMobileNav()" class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Kunjungi Kami</a>
-            <a href="#reservasi" onclick="toggleMobileNav()" class="mt-2 text-center bg-amberGold text-coffee-950 font-semibold py-2.5 rounded-xl">Reservasi Meja</a>
+        <div id="mobileNavMenu"
+            class="hidden md:hidden mt-3 p-4 rounded-2xl glassmorphism border border-coffee-800 text-coffee-100 flex flex-col gap-3">
+            <a href="#tentang" onclick="toggleMobileNav()"
+                class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Tentang Kami</a>
+            <a href="#menu" onclick="toggleMobileNav()"
+                class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Menu Pilihan</a>
+            <a href="#brew-guide" onclick="toggleMobileNav()"
+                class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Brew Guide</a>
+            <a href="#ulasan" onclick="toggleMobileNav()"
+                class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Cerita Rasa</a>
+            <a href="#lokasi" onclick="toggleMobileNav()"
+                class="py-2 px-3 rounded-lg hover:bg-coffee-800/60 transition">Kunjungi Kami</a>
+            <a href="#reservasi" onclick="toggleMobileNav()"
+                class="mt-2 text-center bg-amberGold text-coffee-950 font-semibold py-2.5 rounded-xl">Reservasi Meja</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[92vh] flex items-center pt-28 pb-16 px-6 md:px-12 bg-coffee-950 text-white overflow-hidden">
+    <section
+        class="relative min-h-[92vh] flex items-center pt-28 pb-16 px-6 md:px-12 bg-coffee-950 text-white overflow-hidden">
         <!-- Background Ambient Image with Gradient Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80" 
-                 alt="Coffee Shop Ambience" 
-                 class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105 duration-1000 transform transition">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80"
+                alt="Coffee Shop Ambience"
+                class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105 duration-1000 transform transition">
             <div class="absolute inset-0 bg-gradient-to-t from-coffee-950 via-coffee-950/70 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-coffee-950 via-coffee-950/80 to-transparent"></div>
         </div>
 
         <div class="max-w-7xl mx-auto w-full relative z-10 grid lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-7 space-y-6">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coffee-900/80 border border-coffee-700 text-amberGold text-xs tracking-wider uppercase font-semibold">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coffee-900/80 border border-coffee-700 text-amberGold text-xs tracking-wider uppercase font-semibold">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                     Buka Hari Ini: 08:00 - 23:00 WIB
                 </div>
@@ -131,14 +152,17 @@
                     <span class="text-amberGold italic font-normal">Sebuah Cerita</span> & Ruang Bernapas.
                 </h1>
                 <p class="text-coffee-300 text-base sm:text-lg max-w-xl font-light leading-relaxed">
-                    Kami menyangrai biji kopi lokal single-origin Nusantara pilihan dengan dedikasi tinggi. Temukan ketenangan, perbincangan hangat, dan aroma kopi segar di Kala Kopi.
+                    Kami menyangrai biji kopi lokal single-origin Nusantara pilihan dengan dedikasi tinggi. Temukan
+                    ketenangan, perbincangan hangat, dan aroma kopi segar di Kala Kopi.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#menu" class="inline-flex items-center gap-2 bg-amberGold hover:bg-amber-500 text-coffee-950 font-bold px-7 py-3.5 rounded-full transition shadow-lg shadow-amberGold/20 hover:scale-105">
+                    <a href="#menu"
+                        class="inline-flex items-center gap-2 bg-amberGold hover:bg-amber-500 text-coffee-950 font-bold px-7 py-3.5 rounded-full transition shadow-lg shadow-amberGold/20 hover:scale-105">
                         <span>Pesan Menu Favorit</span>
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
-                    <a href="#cerita" class="inline-flex items-center gap-2 bg-coffee-900/80 hover:bg-coffee-800 text-coffee-100 border border-coffee-700 px-7 py-3.5 rounded-full transition">
+                    <a href="#cerita"
+                        class="inline-flex items-center gap-2 bg-coffee-900/80 hover:bg-coffee-800 text-coffee-100 border border-coffee-700 px-7 py-3.5 rounded-full transition">
                         <i data-lucide="play-circle" class="w-4 h-4 text-amberGold"></i>
                         <span>Filosofi Seduh</span>
                     </a>
@@ -164,33 +188,40 @@
             <!-- Hero Floating Card / Showcase -->
             <div class="lg:col-span-5 flex justify-center lg:justify-end">
                 <div class="relative w-full max-w-md">
-                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border border-coffee-700 bg-coffee-900/60 p-4 backdrop-blur-md">
+                    <div
+                        class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border border-coffee-700 bg-coffee-900/60 p-4 backdrop-blur-md">
                         <div class="relative h-72 rounded-2xl overflow-hidden mb-4">
-                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" 
-                                 alt="Kala Signature Cold Brew" 
-                                 class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-amberGold text-coffee-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Brew</span>
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+                                alt="Kala Signature Cold Brew" class="w-full h-full object-cover">
+                            <span
+                                class="absolute top-3 right-3 bg-amberGold text-coffee-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Signature
+                                Brew</span>
                         </div>
                         <div class="p-2 space-y-2">
                             <div class="flex justify-between items-baseline">
                                 <h3 class="font-serif text-xl font-bold text-white">Gula Aren Velvet Latte</h3>
                                 <span class="text-amberGold font-bold text-lg">Rp 28.000</span>
                             </div>
-                            <p class="text-xs text-coffee-300">Espresso gayo organik, susu oat creamy, sentuhan sirup gula aren kelapa murni.</p>
+                            <p class="text-xs text-coffee-300">Espresso gayo organik, susu oat creamy, sentuhan sirup
+                                gula aren kelapa murni.</p>
                             <div class="pt-3 flex items-center justify-between">
                                 <div class="flex items-center gap-1 text-amberGold text-xs">
                                     <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
                                     <span class="font-bold text-white">4.9</span>
                                     <span class="text-coffee-400">(420+ review)</span>
                                 </div>
-                                <button onclick="quickAddToCart('Gula Aren Velvet Latte', 28000, 'Signature', 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80')" class="px-4 py-2 bg-coffee-800 hover:bg-coffee-700 text-amberGold rounded-xl text-xs font-semibold flex items-center gap-1.5 transition">
+                                <button
+                                    onclick="quickAddToCart('Gula Aren Velvet Latte', 28000, 'Signature', 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80')"
+                                    class="px-4 py-2 bg-coffee-800 hover:bg-coffee-700 text-amberGold rounded-xl text-xs font-semibold flex items-center gap-1.5 transition">
                                     <i data-lucide="plus" class="w-3.5 h-3.5"></i> Tambah
                                 </button>
                             </div>
                         </div>
                     </div>
                     <!-- Decorative blur glow -->
-                    <div class="absolute -bottom-8 -right-8 w-44 h-44 bg-amberGold/20 rounded-full blur-3xl pointer-events-none"></div>
+                    <div
+                        class="absolute -bottom-8 -right-8 w-44 h-44 bg-amberGold/20 rounded-full blur-3xl pointer-events-none">
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,41 +232,51 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-amberGold text-xs uppercase tracking-widest font-semibold">Mengapa Kala Kopi?</span>
-                <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2 text-coffee-900">Perhatian Penuh di Setiap Proses Seduh</h2>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2 text-coffee-900">Perhatian Penuh di Setiap
+                    Proses Seduh</h2>
                 <div class="w-16 h-1 bg-amberGold mx-auto mt-4 rounded-full"></div>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="p-8 rounded-2xl bg-coffee-50 border border-coffee-200/60 hover:shadow-xl transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-2xl bg-coffee-900 text-amberGold flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <div
+                    class="p-8 rounded-2xl bg-coffee-50 border border-coffee-200/60 hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-coffee-900 text-amberGold flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i data-lucide="leaf" class="w-7 h-7"></i>
                     </div>
                     <h3 class="font-serif text-xl font-bold mb-3 text-coffee-900">Biji Single-Origin Lokal</h3>
                     <p class="text-sm text-coffee-700 leading-relaxed">
-                        Kami bekerja sama langsung secara fair-trade dengan petani kopi di dataran tinggi Gayo, Toraja, Mandheling, dan Kintamani.
+                        Kami bekerja sama langsung secara fair-trade dengan petani kopi di dataran tinggi Gayo, Toraja,
+                        Mandheling, dan Kintamani.
                     </p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="p-8 rounded-2xl bg-coffee-50 border border-coffee-200/60 hover:shadow-xl transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-2xl bg-coffee-900 text-amberGold flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <div
+                    class="p-8 rounded-2xl bg-coffee-50 border border-coffee-200/60 hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-coffee-900 text-amberGold flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i data-lucide="flame" class="w-7 h-7"></i>
                     </div>
                     <h3 class="font-serif text-xl font-bold mb-3 text-coffee-900">Small-Batch Fresh Roasting</h3>
                     <p class="text-sm text-coffee-700 leading-relaxed">
-                        Disangrai berkala dalam batch kecil setiap minggu untuk mempertahankan kesegaran aroma dan profil notes rasa yang kompleks.
+                        Disangrai berkala dalam batch kecil setiap minggu untuk mempertahankan kesegaran aroma dan
+                        profil notes rasa yang kompleks.
                     </p>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="p-8 rounded-2xl bg-coffee-50 border border-coffee-200/60 hover:shadow-xl transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-2xl bg-coffee-900 text-amberGold flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <div
+                    class="p-8 rounded-2xl bg-coffee-50 border border-coffee-200/60 hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-coffee-900 text-amberGold flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i data-lucide="wifi" class="w-7 h-7"></i>
                     </div>
                     <h3 class="font-serif text-xl font-bold mb-3 text-coffee-900">Suasana Nyaman & Tenang</h3>
                     <p class="text-sm text-coffee-700 leading-relaxed">
-                        Dilengkapi koneksi Wi-Fi super kencang, stopkontak melimpah di setiap sudut meja, serta playlist jazz lembut yang menenangkan.
+                        Dilengkapi koneksi Wi-Fi super kencang, stopkontak melimpah di setiap sudut meja, serta playlist
+                        jazz lembut yang menenangkan.
                     </p>
                 </div>
             </div>
@@ -249,22 +290,35 @@
                 <div>
                     <span class="text-amberGold text-xs uppercase tracking-widest font-semibold">Pilihan Spesial</span>
                     <h2 class="font-serif text-3xl md:text-5xl font-bold text-coffee-950 mt-1">Daftar Menu Kami</h2>
-                    <p class="text-coffee-600 text-sm mt-2">Diseduh dengan ketelitian oleh barista bersertifikat kami.</p>
+                    <p class="text-coffee-600 text-sm mt-2">Diseduh dengan ketelitian oleh barista bersertifikat kami.
+                    </p>
                 </div>
 
                 <!-- Category Filters -->
                 <div class="flex items-center gap-2 overflow-x-auto pb-2 mt-6 md:mt-0 hide-scrollbar" id="menuTabs">
-                    <button onclick="filterMenu('all')" class="tab-btn active px-5 py-2 rounded-full text-xs font-semibold bg-coffee-900 text-white transition shadow-sm" data-category="all">Semua</button>
-                    <button onclick="filterMenu('signature')" class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition" data-category="signature">Signature</button>
-                    <button onclick="filterMenu('espresso')" class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition" data-category="espresso">Espresso Base</button>
-                    <button onclick="filterMenu('manual')" class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition" data-category="manual">Manual Brew</button>
-                    <button onclick="filterMenu('noncoffee')" class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition" data-category="noncoffee">Non-Coffee</button>
-                    <button onclick="filterMenu('pastry')" class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition" data-category="pastry">Pastry</button>
+                    <button onclick="filterMenu('all')"
+                        class="tab-btn active px-5 py-2 rounded-full text-xs font-semibold bg-coffee-900 text-white transition shadow-sm"
+                        data-category="all">Semua</button>
+                    <button onclick="filterMenu('signature')"
+                        class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition"
+                        data-category="signature">Signature</button>
+                    <button onclick="filterMenu('espresso')"
+                        class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition"
+                        data-category="espresso">Espresso Base</button>
+                    <button onclick="filterMenu('manual')"
+                        class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition"
+                        data-category="manual">Manual Brew</button>
+                    <button onclick="filterMenu('noncoffee')"
+                        class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition"
+                        data-category="noncoffee">Non-Coffee</button>
+                    <button onclick="filterMenu('pastry')"
+                        class="tab-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-coffee-800 hover:bg-coffee-200 transition"
+                        data-category="pastry">Pastry</button>
                 </div>
             </div>
 
             <!-- Menu Grid -->
-            <div id="menuContainer" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div id="menuContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Items populated via JS for easy maintainability -->
             </div>
         </div>
@@ -276,14 +330,18 @@
             <div class="text-center max-w-xl mx-auto mb-12">
                 <span class="text-amberGold text-xs uppercase tracking-widest font-semibold">Interactive Tool</span>
                 <h2 class="font-serif text-3xl md:text-4xl font-bold mt-1">Manual Brew Calculator</h2>
-                <p class="text-coffee-300 text-sm mt-2">Dapatkan rasio seduh sempurna untuk V60, Aeropress, atau French Press di rumah.</p>
+                <p class="text-coffee-300 text-sm mt-2">Dapatkan rasio seduh sempurna untuk V60, Aeropress, atau French
+                    Press di rumah.</p>
             </div>
 
-            <div class="bg-coffee-950/80 p-8 rounded-3xl border border-coffee-800 shadow-2xl grid md:grid-cols-2 gap-8 items-center backdrop-blur-md">
+            <div
+                class="bg-coffee-950/80 p-8 rounded-3xl border border-coffee-800 shadow-2xl grid md:grid-cols-2 gap-8 items-center backdrop-blur-md">
                 <div class="space-y-6">
                     <div>
-                        <label class="block text-xs uppercase tracking-wider text-coffee-300 font-semibold mb-2">Metode Seduh</label>
-                        <select id="brewMethod" onchange="calculateBrew()" class="w-full bg-coffee-900 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold transition">
+                        <label class="block text-xs uppercase tracking-wider text-coffee-300 font-semibold mb-2">Metode
+                            Seduh</label>
+                        <select id="brewMethod" onchange="calculateBrew()"
+                            class="w-full bg-coffee-900 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold transition">
                             <option value="15">V60 Pour Over (Rasio 1 : 15 - Bold & Clean)</option>
                             <option value="16" selected>V60 Pour Over (Rasio 1 : 16 - Balanced Standard)</option>
                             <option value="14">Aeropress (Rasio 1 : 14 - Intense Body)</option>
@@ -293,11 +351,14 @@
                     </div>
 
                     <div>
-                        <div class="flex justify-between text-xs uppercase tracking-wider text-coffee-300 font-semibold mb-2">
+                        <div
+                            class="flex justify-between text-xs uppercase tracking-wider text-coffee-300 font-semibold mb-2">
                             <span>Berat Bubuk Kopi (Gram)</span>
                             <span id="coffeeGramsLabel" class="text-amberGold font-bold text-sm">15 g</span>
                         </div>
-                        <input type="range" id="coffeeGrams" min="10" max="40" step="1" value="15" oninput="calculateBrew()" class="w-full accent-amberGold bg-coffee-800 h-2 rounded-lg cursor-pointer">
+                        <input type="range" id="coffeeGrams" min="10" max="40" step="1" value="15"
+                            oninput="calculateBrew()"
+                            class="w-full accent-amberGold bg-coffee-800 h-2 rounded-lg cursor-pointer">
                         <div class="flex justify-between text-[11px] text-coffee-400 mt-1">
                             <span>10g (1 cangkir kecil)</span>
                             <span>25g (2 cangkir)</span>
@@ -306,8 +367,10 @@
                     </div>
 
                     <div>
-                        <label class="block text-xs uppercase tracking-wider text-coffee-300 font-semibold mb-2">Suhu Air yang Dianjurkan</label>
-                        <div class="p-3 bg-coffee-900/60 rounded-xl border border-coffee-800 text-sm text-coffee-200 flex items-center gap-3">
+                        <label class="block text-xs uppercase tracking-wider text-coffee-300 font-semibold mb-2">Suhu
+                            Air yang Dianjurkan</label>
+                        <div
+                            class="p-3 bg-coffee-900/60 rounded-xl border border-coffee-800 text-sm text-coffee-200 flex items-center gap-3">
                             <i data-lucide="thermometer" class="w-5 h-5 text-amberGold"></i>
                             <span id="tempAdvice">90°C - 93°C (Tunggu 45 detik setelah mendidih)</span>
                         </div>
@@ -315,9 +378,12 @@
                 </div>
 
                 <!-- Calculator Result Display -->
-                <div class="bg-gradient-to-br from-coffee-900 to-coffee-800/80 p-8 rounded-2xl border border-coffee-700/60 text-center flex flex-col justify-center items-center">
-                    <span class="text-xs uppercase tracking-widest text-coffee-300 font-medium">Kebutuhan Air Panas</span>
-                    <div class="font-serif text-5xl md:text-6xl font-bold text-amberGold my-3 flex items-baseline gap-1">
+                <div
+                    class="bg-gradient-to-br from-coffee-900 to-coffee-800/80 p-8 rounded-2xl border border-coffee-700/60 text-center flex flex-col justify-center items-center">
+                    <span class="text-xs uppercase tracking-widest text-coffee-300 font-medium">Kebutuhan Air
+                        Panas</span>
+                    <div
+                        class="font-serif text-5xl md:text-6xl font-bold text-amberGold my-3 flex items-baseline gap-1">
                         <span id="waterResult">240</span>
                         <span class="text-2xl font-sans text-coffee-300">ml</span>
                     </div>
@@ -357,11 +423,13 @@
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         </div>
                         <p class="text-sm text-coffee-800 italic leading-relaxed">
-                            "Tempat wfc paling nyaman di kota ini! Kopinya konsisten enaknya, Gula Aren Velvet Latte-nya gak bikin enek dan wangi banget. Baristanya ramah menjelaskan notes kopi."
+                            "Tempat wfc paling nyaman di kota ini! Kopinya konsisten enaknya, Gula Aren Velvet Latte-nya
+                            gak bikin enek dan wangi banget. Baristanya ramah menjelaskan notes kopi."
                         </p>
                     </div>
                     <div class="mt-6 flex items-center gap-3 pt-4 border-t border-coffee-200">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+                            alt="Customer" class="w-10 h-10 rounded-full object-cover">
                         <div>
                             <h4 class="text-sm font-bold text-coffee-900">Anindya Putri</h4>
                             <p class="text-xs text-coffee-500">UI/UX Designer</p>
@@ -379,11 +447,13 @@
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         </div>
                         <p class="text-sm text-coffee-800 italic leading-relaxed">
-                            "Manual brew beans Gayo Wine-nya luar biasa floral dan fruity. Sangat mengapresiasi kurasi beans Nusantara di Kala Kopi. Pastry almond croissant-nya juga juara!"
+                            "Manual brew beans Gayo Wine-nya luar biasa floral dan fruity. Sangat mengapresiasi kurasi
+                            beans Nusantara di Kala Kopi. Pastry almond croissant-nya juga juara!"
                         </p>
                     </div>
                     <div class="mt-6 flex items-center gap-3 pt-4 border-t border-coffee-200">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80"
+                            alt="Customer" class="w-10 h-10 rounded-full object-cover">
                         <div>
                             <h4 class="text-sm font-bold text-coffee-900">Dimas Wicaksono</h4>
                             <p class="text-xs text-coffee-500">Coffee Enthusiast</p>
@@ -401,11 +471,13 @@
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         </div>
                         <p class="text-sm text-coffee-800 italic leading-relaxed">
-                            "Area smoking outdoor-nya adem banyak tanaman, toilet bersih, parkir aman. Sangat cocok buat meeting sore atau santai baca buku di akhir pekan."
+                            "Area smoking outdoor-nya adem banyak tanaman, toilet bersih, parkir aman. Sangat cocok buat
+                            meeting sore atau santai baca buku di akhir pekan."
                         </p>
                     </div>
                     <div class="mt-6 flex items-center gap-3 pt-4 border-t border-coffee-200">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80"
+                            alt="Customer" class="w-10 h-10 rounded-full object-cover">
                         <div>
                             <h4 class="text-sm font-bold text-coffee-900">Siti Rahma</h4>
                             <p class="text-xs text-coffee-500">Content Creator</p>
@@ -420,34 +492,44 @@
     <section id="reservasi" class="py-20 px-6 md:px-12 bg-coffee-950 text-white relative">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
             <!-- Reservation Form -->
-            <div class="lg:col-span-7 bg-coffee-900/90 border border-coffee-800 p-8 md:p-10 rounded-3xl backdrop-blur-md">
+            <div
+                class="lg:col-span-7 bg-coffee-900/90 border border-coffee-800 p-8 md:p-10 rounded-3xl backdrop-blur-md">
                 <span class="text-amberGold text-xs uppercase tracking-widest font-semibold">Ruang & Temu</span>
                 <h3 class="font-serif text-3xl font-bold mt-1 mb-6">Reservasi Meja / Event Komunitas</h3>
-                
+
                 <form id="reservationForm" onsubmit="handleReservation(event)" class="space-y-4">
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Nama Lengkap</label>
-                            <input type="text" required placeholder="Contoh: Budi Santoso" class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
+                            <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Nama
+                                Lengkap</label>
+                            <input type="text" required placeholder="Contoh: Budi Santoso"
+                                class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
                         </div>
                         <div>
-                            <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Nomor WhatsApp</label>
-                            <input type="tel" required placeholder="0812-xxxx-xxxx" class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
+                            <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Nomor
+                                WhatsApp</label>
+                            <input type="tel" required placeholder="0812-xxxx-xxxx"
+                                class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
                         </div>
                     </div>
 
                     <div class="grid sm:grid-cols-3 gap-4">
                         <div>
                             <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Tanggal</label>
-                            <input type="date" required class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
+                            <input type="date" required
+                                class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
                         </div>
                         <div>
-                            <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Jam Kedatangan</label>
-                            <input type="time" required class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
+                            <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Jam
+                                Kedatangan</label>
+                            <input type="time" required
+                                class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
                         </div>
                         <div>
-                            <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Jumlah Orang</label>
-                            <select class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
+                            <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Jumlah
+                                Orang</label>
+                            <select
+                                class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm">
                                 <option>1 - 2 Orang</option>
                                 <option>3 - 4 Orang</option>
                                 <option>5 - 8 Orang</option>
@@ -457,11 +539,14 @@
                     </div>
 
                     <div>
-                        <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Catatan Khusus (Opsional)</label>
-                        <textarea rows="3" placeholder="Misal: Butuh colokan dekat jendela, area non-smoking..." class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm"></textarea>
+                        <label class="block text-xs text-coffee-300 uppercase tracking-wider mb-2">Catatan Khusus
+                            (Opsional)</label>
+                        <textarea rows="3" placeholder="Misal: Butuh colokan dekat jendela, area non-smoking..."
+                            class="w-full bg-coffee-950 border border-coffee-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amberGold text-sm"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full py-4 bg-amberGold hover:bg-amber-500 text-coffee-950 font-bold rounded-xl transition shadow-lg mt-2 flex items-center justify-center gap-2">
+                    <button type="submit"
+                        class="w-full py-4 bg-amberGold hover:bg-amber-500 text-coffee-950 font-bold rounded-xl transition shadow-lg mt-2 flex items-center justify-center gap-2">
                         <i data-lucide="check-circle" class="w-5 h-5"></i>
                         <span>Konfirmasi Booking Meja</span>
                     </button>
@@ -472,13 +557,16 @@
             <div id="lokasi" class="lg:col-span-5 space-y-6">
                 <div class="space-y-4">
                     <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-coffee-800 text-amberGold flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-coffee-800 text-amberGold flex items-center justify-center shrink-0">
                             <i data-lucide="map-pin" class="w-6 h-6"></i>
                         </div>
                         <div>
                             <h4 class="font-bold text-lg text-white">Alamat Kedai</h4>
-                            <p class="text-sm text-coffee-300 mt-1 leading-relaxed">Jl. Senopati No. 42, Kebayoran Baru, Jakarta Selatan, 12190</p>
-                            <a href="https://maps.google.com" target="_blank" class="inline-flex items-center gap-1 text-xs text-amberGold font-semibold hover:underline mt-2">
+                            <p class="text-sm text-coffee-300 mt-1 leading-relaxed">Jl. Senopati No. 42, Kebayoran Baru,
+                                Jakarta Selatan, 12190</p>
+                            <a href="https://maps.google.com" target="_blank"
+                                class="inline-flex items-center gap-1 text-xs text-amberGold font-semibold hover:underline mt-2">
                                 <span>Buka Google Maps</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                             </a>
@@ -486,7 +574,8 @@
                     </div>
 
                     <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-coffee-800 text-amberGold flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-coffee-800 text-amberGold flex items-center justify-center shrink-0">
                             <i data-lucide="clock" class="w-6 h-6"></i>
                         </div>
                         <div>
@@ -497,7 +586,8 @@
                     </div>
 
                     <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-coffee-800 text-amberGold flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-coffee-800 text-amberGold flex items-center justify-center shrink-0">
                             <i data-lucide="phone-call" class="w-6 h-6"></i>
                         </div>
                         <div>
@@ -512,7 +602,8 @@
                 <div class="p-4 rounded-2xl bg-coffee-900 border border-coffee-800 flex items-center justify-between">
                     <div class="flex items-center gap-3">
                         <span class="relative flex h-3 w-3">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
                         </span>
                         <div>
@@ -537,17 +628,21 @@
             </div>
 
             <p class="text-xs text-center md:text-left text-coffee-400">
-                &copy; <span id="currentYear"></span> Kala Kopi Indonesia. Menyeduh dengan hati dan cinta untuk Nusantara.
+                &copy; <span id="currentYear"></span> Kala Kopi Indonesia. Menyeduh dengan hati dan cinta untuk
+                Nusantara.
             </p>
 
             <div class="flex items-center gap-4 text-coffee-300">
-                <a href="#" class="p-2 rounded-full hover:bg-coffee-900 hover:text-amberGold transition" aria-label="Instagram">
+                <a href="#" class="p-2 rounded-full hover:bg-coffee-900 hover:text-amberGold transition"
+                    aria-label="Instagram">
                     <i data-lucide="instagram" class="w-5 h-5"></i>
                 </a>
-                <a href="#" class="p-2 rounded-full hover:bg-coffee-900 hover:text-amberGold transition" aria-label="Facebook">
+                <a href="#" class="p-2 rounded-full hover:bg-coffee-900 hover:text-amberGold transition"
+                    aria-label="Facebook">
                     <i data-lucide="facebook" class="w-5 h-5"></i>
                 </a>
-                <a href="#" class="p-2 rounded-full hover:bg-coffee-900 hover:text-amberGold transition" aria-label="Twitter">
+                <a href="#" class="p-2 rounded-full hover:bg-coffee-900 hover:text-amberGold transition"
+                    aria-label="Twitter">
                     <i data-lucide="twitter" class="w-5 h-5"></i>
                 </a>
             </div>
@@ -555,8 +650,10 @@
     </footer>
 
     <!-- Cart Drawer (Off-Canvas) -->
-    <div id="cartDrawerBackdrop" onclick="toggleCartDrawer()" class="fixed inset-0 bg-black/60 z-50 transition-opacity duration-300 opacity-0 pointer-events-none"></div>
-    <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-coffee-900 text-white z-50 transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col">
+    <div id="cartDrawerBackdrop" onclick="toggleCartDrawer()"
+        class="fixed inset-0 bg-black/60 z-50 transition-opacity duration-300 opacity-0 pointer-events-none"></div>
+    <div id="cartDrawer"
+        class="fixed top-0 right-0 h-full w-full max-w-md bg-coffee-900 text-white z-50 transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col">
         <!-- Drawer Header -->
         <div class="p-6 border-b border-coffee-800 flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -571,7 +668,8 @@
         <!-- Drawer Body -->
         <div id="cartItemsList" class="flex-1 overflow-y-auto p-6 space-y-4">
             <!-- Empty state default -->
-            <div id="emptyCartView" class="h-full flex flex-col items-center justify-center text-center text-coffee-400">
+            <div id="emptyCartView"
+                class="h-full flex flex-col items-center justify-center text-center text-coffee-400">
                 <i data-lucide="coffee" class="w-16 h-16 stroke-1 text-coffee-700 mb-4"></i>
                 <p class="font-medium">Keranjang masih kosong</p>
                 <p class="text-xs text-coffee-500 mt-1">Pilih minuman atau pastry favoritmu dari menu.</p>
@@ -584,7 +682,8 @@
                 <span class="text-coffee-300">Total Pembayaran</span>
                 <span id="cartTotalPrice" class="font-bold text-xl text-amberGold">Rp 0</span>
             </div>
-            <button onclick="checkoutViaWhatsApp()" id="checkoutBtn" disabled class="w-full py-3.5 bg-amberGold disabled:bg-coffee-800 disabled:text-coffee-600 disabled:cursor-not-allowed hover:bg-amber-500 text-coffee-950 font-bold rounded-xl transition flex items-center justify-center gap-2">
+            <button onclick="checkoutViaWhatsApp()" id="checkoutBtn" disabled
+                class="w-full py-3.5 bg-amberGold disabled:bg-coffee-800 disabled:text-coffee-600 disabled:cursor-not-allowed hover:bg-amber-500 text-coffee-950 font-bold rounded-xl transition flex items-center justify-center gap-2">
                 <i data-lucide="message-circle" class="w-5 h-5"></i>
                 <span>Pesan Cepat via WhatsApp</span>
             </button>
@@ -593,7 +692,8 @@
     </div>
 
     <!-- Notification Toast -->
-    <div id="toastMessage" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-coffee-800 text-white border border-coffee-700 px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+    <div id="toastMessage"
+        class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-coffee-800 text-white border border-coffee-700 px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
         <i data-lucide="check-circle" class="w-5 h-5 text-amberGold"></i>
         <span id="toastText" class="text-sm font-medium">Item berhasil ditambahkan!</span>
     </div>
@@ -683,14 +783,14 @@
             const container = document.getElementById('menuContainer');
             container.innerHTML = '';
 
-            const filtered = category === 'all' 
-                ? menuData 
+            const filtered = category === 'all'
+                ? menuData
                 : menuData.filter(item => item.category === category);
 
             filtered.forEach(item => {
                 const card = document.createElement('div');
                 card.className = "bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-coffee-200/70 flex flex-col justify-between group";
-                
+
                 card.innerHTML = `
                     <div>
                         <div class="relative h-48 overflow-hidden bg-coffee-200">
@@ -935,7 +1035,7 @@
         });
 
         // Initialize
-        window.onload = function() {
+        window.onload = function () {
             document.getElementById('currentYear').textContent = new Date().getFullYear();
             renderMenu('all');
             calculateBrew();
@@ -943,4 +1043,5 @@
         };
     </script>
 </body>
+
 </html>
